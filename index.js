@@ -7,7 +7,7 @@ const { MongoClient } = require('mongodb')
 app.use(cors())
 app.use(express.json())
 //port
-const port = 5000
+const port = process.env.PORT || 5000
 //mongo
 const uri = "mongodb+srv://database-user-1:databaseofzubayer@cluster0.1f3iy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const client = new MongoClient(uri)
