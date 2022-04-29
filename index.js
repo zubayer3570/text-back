@@ -30,6 +30,9 @@ const run = async () => {
             const texts = await cursor.toArray()
             res.send(texts)
         })
+        app.get('/', (req, res) => {
+            res.send("server is running well")
+        })
     } finally {
 
     }
